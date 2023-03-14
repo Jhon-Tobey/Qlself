@@ -2,7 +2,7 @@
 ## 克隆大佬们的仓库，个人自用，请勿拉取！ 
 
 ```
-ql repo https://github.com/Jhon-Tobey/Qlself.git "jd_|jx_|jddj_|Self-use" "backUp" "^jd[^_]|USER|JD|function|sendNotify"
+ql repo https://github.com/Jhon-Tobey/Qlself.git "jd_|jx_|jddj_|Self-use" "backUp" "^jd[^_]|USER|JD|function|sendNotify|qlApi"
 
 ```
 
