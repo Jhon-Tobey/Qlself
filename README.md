@@ -1,55 +1,10 @@
 
-## 6DY
-
->加密审查，无重复，默认不开卡加购，内部互助(可调模式);
-
- 
->欢迎大家issue、pr，会一一回复！
-
-
-### 上车注意安全，不用不明js，app，exe！
-
-### 防走失[TG频道](https://t.me/dylan_jdpro)
-
-### 一键部署（2.11.3版本青龙，默认国内机拉库命令，建好后根据自己情况调整）
-
-使用root用户运行下面一串命令，支持Centos/Ubuntu系统
+## 克隆大佬们的仓库，个人自用，请勿拉取！ 
 
 ```
-curl -sSL https://js.dayplus.xyz/https://raw.githubusercontent.com/6dylan6/jdpro/main/docker/ql1key.sh -o install.sh && bash install.sh
-```
-
-## 拉库指令
-
-【注意】2.11.1前版本青龙config.sh配置把GithubProxyUrl="https://ghproxy.com/ （差不在多19行）" 修改为GithubProxyUrl=""，否则拉取失败，以上版本无需配置。
-
-2.13版本以上拉库方式变了，到订阅管理新建，看配置[截图](https://github.com/6dylan6/jdpro/issues/251)
-
-国内机用下面指令（带代理）：
+ql repo https://github.com/Jhon-Tobey/Qlself.git "jd_|jx_|jddj_" "backUp" "^jd[^_]|USER|JD|function|sendNotify"
 
 ```
-ql repo https://ghproxy.com/https://github.com/6dylan6/jdpro.git "jd_|jx_|jddj_" "backUp" "^jd[^_]|USER|JD|function|sendNotify"
-
-```
-如默认代理ghproxy.com 拉不动，换备用的 js.dayplus.xyz
-
-国外机用下面指令（无需代理）：
-
-```
-ql repo https://github.com/6dylan6/jdpro.git "jd_|jx_|jddj_" "backUp" "^jd[^_]|USER|JD|function|sendNotify"
-
-```
-
-Gitee版不能正常拉取，已停止维护！（20220711）
-
-
-任务定时建议 50 7-23/2 * * *  
-
-
-线报监控类脚本，需要的到 https://github.com/6dylan6/jdm.git
-
-自动带图评价（PC版CK）需要的到 https://github.com/6dylan6/auto_comment.git
-
 
 ## 使用流程
 
@@ -77,21 +32,13 @@ RepoFileExtensions="js py"修改为 RepoFileExtensions="js py sh ts" 保存
 
 如 task XXXXX.js conc JD_COOKIE
 
-任务分组运行方法：
+2、任务分组运行方法：
 
 在任务后面加desi JD_COOKIE 需要运行的ck序号
 
 如 task XXXX.js desi JD_COOKIE 1-10  前10个一组运行，2 8 9就是第2/8/9序号的ck执行，以此类推。
 
-2、极速版签到建议并发，号多跑很久的，一个号要30多分钟。。
-
-task 6dylan6_jdpro_jd_speed_sign.js conc JD_COOKIE （具体任务路径不同版本不一样，按自己的写）
-
-3、保价建议并发，否则可能前几个号正常跑，后面会报频繁！
-
-task 6dylan6_jdpro_jd_price.js conc JD_COOKIE
-
-4、通知支持一对一推送和显示备注，还有分组通知等用法参考[notify.md](./notify.md)
+通知支持一对一推送和显示备注，还有分组通知等用法参考[notify.md](./notify.md)
 
 备注显示变量如下
 
