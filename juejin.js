@@ -7,7 +7,7 @@
  * 打开掘金社区 F12，选择 Application，点击 Cookies,填写规则：sessionid=xxxxxxxxx
  * @description 掘金自动签到
  */
-const $ = new require('./env').Env('掘金自动签到');
+const $ = new require('./tools/env').Env('掘金自动签到');
 const notify = $.isNode() ? require('./sendNotify') : '';
 let JUEJIN_COOKIE = process.env.JUEJIN_COOKIE, cookie = '', cookiesArr = [], message = '';
 
