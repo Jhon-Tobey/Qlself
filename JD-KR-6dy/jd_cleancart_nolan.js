@@ -96,7 +96,7 @@ for (let i in productsArr) {
   }
 
   $.out = false
-  console.log('\n==此脚本使用的签名接口来自Nolan提供的公益服务,大伙记得给他点赞==');
+  console.log('');
   for (let i = 0; i < cookiesArr.length; i++) {
     cookie = cookiesArr[i];
     if (cookie) {
