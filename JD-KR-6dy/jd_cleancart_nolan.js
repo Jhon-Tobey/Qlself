@@ -44,8 +44,8 @@ let jdSignUrl = 'https://api.nolanstore.top/sign'
 let cleancartRun = 'false'
 let cleancartProducts = ''
 const $ = new Env('清空购物车-Sign版');
-const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
-const notify = $.isNode() ? require('./sendNotify') : '';
+const jdCookieNode = $.isNode() ? require('./JS/jdCookie.js') : '';
+const notify = $.isNode() ? require('./tools/sendNotify') : '';
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [],
     cookie = '';
