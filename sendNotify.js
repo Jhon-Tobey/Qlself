@@ -1,36 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@Jhon-Tobey 
-6dylan6
-/
-jdpro
-Public
-Fork your own copy of 6dylan6/jdpro
-Code
-Issues
-335
-Pull requests
-4
-Discussions
-Actions
-Projects
-Security
-Insights
-jdpro/sendNotify.js /
-@6dylan6
-6dylan6 1
-Latest commit 53b99ea yesterday
- History
- 3 contributors
-@6dylan6@yoqu@Pengfei00
-2548 lines (2395 sloc)  98.9 KB
-
 /*
  * @Author: ccwav https://github.com/ccwav/QLScript2 
  
