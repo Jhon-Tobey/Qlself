@@ -1,5 +1,7 @@
 /*
 cron "0 9 * * *" autoSignin.js, tag=阿里云盘签到
+https://alist.nn.ci/zh/guide/drivers/aliyundrive.html 打开页面扫码获取refresh_token
+变量名 refresh_token
 */
 
 const axios = require('axios')
