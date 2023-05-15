@@ -1190,7 +1190,7 @@ function Env(name, env) {
 
             this.isMute || (this.isSurge() || this.isLoon() ? $notification.post(e, s, i, o(r)) : this.isQuanX() && $notify(e, s, i, o(r)));
 
-            let h = ["", "============== 小辉版|系统通知 =============="];
+            let h = ["", "============== 系统通知 =============="];
 
             h.push(e),
 
