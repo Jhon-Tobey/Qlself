@@ -15,7 +15,7 @@ const CLIENT_SECRET = process.env.CLIENT_SECRET
  *获取青龙token
  */
 function getQLToken() {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     axios
       .get(
         QL_URL +
@@ -24,6 +24,8 @@ function getQLToken() {
       .then(res => {
         if (res.data.code === 200) {
           resolve(res.data.data.token)
+        } else {
+          reject(res.data.message)
         }
       })
   })
@@ -82,7 +84,7 @@ function getQLEnvs(instance, searchValue = 'JD_COOKIE') {
         }
       })
       .then(res => {
-        resolve(res.data.data)
+        resolve(res.data.data.filter(v => v.status === 0))
       })
   })
 }
