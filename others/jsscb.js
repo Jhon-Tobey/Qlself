@@ -69,7 +69,7 @@ class UserInfo {
         await this.openbox();
       } else {
         $.logAndNotify("账号[" + this.name + "]签到: " + result.err_tips);
-        if (result.err_tips == "0") {
+        if (result.err_tips == "签到已完成") {
           await this.openbox();
         }
       }
